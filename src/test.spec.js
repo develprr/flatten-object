@@ -17,6 +17,5 @@ describe('flattenObject', () => {
     flatObject['user.kids.1'].should.equal('kim');
     flatObject['user.kids.2'].should.equal('jim');
     flatObject['user.address.streetAddress'].should.equal('Somestreet 1');
-    console.log('flat object', flatObject);
   });
 });
