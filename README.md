@@ -1,6 +1,7 @@
 # flatten-object
 
 A micro-library for flattening deeply nested objects.
+**Please don't use this package!** This package is only an experiment!
 
 ## Installation
 

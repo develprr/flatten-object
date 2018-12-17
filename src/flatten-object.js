@@ -1,6 +1,6 @@
 /*
 
-flattenObject function
+makeObjectFlat function
 
 A Micro-library for flattening deeply nested objects.
 
@@ -13,7 +13,6 @@ const isObject = (item) => item && (typeof item === 'object');
 const isArray = (item) => item && item instanceof Array;
 
 const isContainer = (item) => item && (typeof item === 'object' || item instanceof Array);
-
 
 const arrayToPathmap = (array, evolvingPath, pathmap) => {
   array.forEach((arrayItem, index) => {
@@ -44,4 +43,4 @@ const objectToPathmap = (object, evolvingPath, pathmap) => {
   return pathmap;
 }
 
-export const flattenObject = (object) => objectToPathmap(object, '', {});
+export const makeObjectToFlat = (object) => objectToPathmap(object, '', {});

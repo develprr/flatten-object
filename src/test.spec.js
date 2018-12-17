@@ -1,7 +1,7 @@
 import {assert, describe, it} from 'mocha';
-import {flattenObject} from './flatten-object';
+import {makeObjectToFlat} from './flatten-object';
 
-describe('flattenObject', () => {
+describe('makeObjectFlat', () => {
 
   it('should convert deeply nested object to flat object', () => {
     const deepObject = {
@@ -13,7 +13,7 @@ describe('flattenObject', () => {
         }
       }
     }
-    const flatObject = flattenObject(deepObject);
+    const flatObject = makeObjectToFlat(deepObject);
     flatObject['user.kids.1'].should.equal('kim');
     flatObject['user.kids.2'].should.equal('jim');
     flatObject['user.address.streetAddress'].should.equal('Somestreet 1');

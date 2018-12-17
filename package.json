@@ -1,6 +1,6 @@
 {
   "name": "@metamatic.net/flatten-object",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A micro library for flattening deeply nested objects.",
   "main": "index.js",
   "scripts": {
